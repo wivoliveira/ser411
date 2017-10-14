@@ -56,11 +56,11 @@ for sensor in sensores:
 
         layer_focos.SetAttributeFilter(query)
         nfocos = layer_focos.GetFeatureCount()
-        print(nfocos) #query no argis resulta em 2960 para primeiro satélite e mes=1
+        """print(nfocos) #query no argis resulta em 2960 para primeiro satélite e mes=1
                         # "timestamp" > '2016/01' AND "timestamp" < '2016/02' AND "satelite" ='TERRA_M-M'
                         #Resultados (TERRA_M-M): jar 2960, fev 786, mar 2023, abr 845, mai 829, jun 1510,
                         # jul 3976, ago 10797, set 12683, out 7320, nov 4836, dez 1948
-
+        """
         # Criando uma matriz numérica
         matriz = np.zeros((grid_dimensions['rows'], grid_dimensions['cols']), np.int16)
 
